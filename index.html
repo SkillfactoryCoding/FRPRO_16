@@ -1,0 +1,28 @@
+<html>
+<body>
+  <canvas id="cnv" width="500" height="500">
+  <script>
+    const canvas = document.getElementById('cnv');
+    const ctx = canvas.getContext('2d');
+    
+    ctx.beginPath();
+    
+    ctx.strokeRect(10, 40, 30, 110);
+    ctx.fillRect(50, 50, 30, 110);
+     
+    ctx.fillStyle = 'green';
+    ctx.fillRect(90, 20, 30, 110);
+    
+    ctx.fillStyle = 'yellow';
+    ctx.moveTo(190, 120);
+    ctx.lineTo(195, 150);
+    ctx.lineTo(295, 150);
+    ctx.lineTo(335, 70);
+    
+    // ctx.stroke();
+    ctx.fill();
+    
+    ctx.closePath();
+  </script>
+</body>
+<html>
